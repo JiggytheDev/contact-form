@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  <main class="container">
+    <h1>Contact Us</h1>
+    <section class="completed" id="completed">
+      <div class="msg">
+        <img src="assets/images/icon-success-check.svg" alt="">
+        Message Sent!
+      </div>
+      <div class="thanks">
+        Thanks for completing the form. We'll be in touch soon!
+      </div>
+    </section>
+    <section class="nameView">
+      <form class="nameForm flexCenter" id="firstnameform">
+        <label for="firstname">
+          First Name  *
+        </label>
+        <input type="text"  id="firstName" autocomplete="off" class="firstname">
+        <p class="format">This field is required</p>
+      </form>
+
+      <form class="nameForm flexCenter" id="lastnameform">
+        <label for="lastname">
+          Last Name  *
+        </label>
+        <input type="text"  id="lastname" autocomplete="off" class="lastname">
+        <p class="last">This field is required</p>
+      </form>
+    </section>
+    
+    <section class="emailView flexCenter">
+      <form class="emailForm flexCenter" id="emailForm">
+        <label for="email">
+          Email Address  *
+        </label>
+        <input type="email" id="email" autocomplete="off" class="email">
+        <p class="mailError">Please enter a valid email address</p>
+      </form>
+    </section>
+
+    <section class="queryView">
+      Query Type  *
+      <div class="queryselect">
+        <form class="queryForm flexCenter" id="queryForm">
+        
+          <div class="equity-content" id="equityContent">
+            <input type="radio" id="equity" class="equity" name="queryType" value="equity">
+            <label for="query" class="radiolabel">
+             General Enquiry
+            </label>
+          </div>
+          
+          <div class="support-content" id="supportContent">
+            <input type="radio" id="support" class="support" name="queryType" value="support">
+            <label for="support" class="radiolabel">
+             Support Request
+            </label>
+          </div>
+          
+        </form>
+      </div>
+      <p class="select">
+        Please select a query type
+      </p>
+    </section>
+
+    <section class="messageView">
+      <form class="messageForm flexCenter" id="messageForm">
+        <label for="message">
+          Message  *
+        </label>
+        <textarea id="message" class="message"></textarea>
+        <p class="messageError">This field is required</p>
+      </form>
+    </section>
+
+    <section class="consent">
+      <form class="consentForm">
+        <label for="check" class="check">
+          <input type="checkbox" id="checkbox">
+          <h3>I consent to being contacted by the team *</h3>
+        </label>
+        <p class="consentError">To submit this form, please consent to being contacted</p>
+        
+      </form>
+    </section>
+
+    <section class="submit">
+      <form class="submitForm">
+        <label for="submitBtn"></label>
+        <button id="submitBtn" class="btn">Submit</button>
+      </form>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/JiggytheDev/">JiggytheDev</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
